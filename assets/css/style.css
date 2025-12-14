@@ -6,6 +6,13 @@
 }
 
 /** boot css **/
+html,body{
+    overflow-x: hidden;
+    height: 100;
+}
+input{
+    border: 0;
+}
 .center{
     max-width: 1280px;
     padding: 0 2%;
@@ -58,7 +65,7 @@ header .sublogo{
 }
 nav.desktop ul{
     position: relative;
-    top: 7px;
+    top: 2px;
     list-style-type: none;
 }
 nav.desktop li{
@@ -289,7 +296,7 @@ section.contato h2{
 
 section.erro-404{
     min-height: 600px;
-    padding: 70px 0;
+    padding: 60px 0;
 }
 .wrapper-404{
     position: absolute;
@@ -301,12 +308,15 @@ section.erro-404 h2{
     font-weight: 400;
     font-size: 28px;
     border-top: 2px solid #444;
-    margin-top: 20px;
+    margin-top: 40px;
+    padding: 50px 0;
 }
 section.erro-404 p{
     text-align: center;
     font-size: 16px;
     margin-top: 30px;
+    border-bottom: 2px solid #444;
+    padding: 50px 0;
 }
 section.erro-404 a{
     color: #444;
@@ -316,8 +326,6 @@ section.erro-404 a{
     width: 100%;
     position: absolute;
 }
-
-
 
 footer{
     text-align: center;
@@ -335,6 +343,52 @@ footer p{
     text-align: center;
     font-weight: 300;
     font-size: 15px;
+}
+footer.fixed{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* página de contato */
+#map{
+    width: 100%;
+    height: 400px;
+}
+.contato-container{
+    padding: 40px 0;
+    text-align: center;
+}
+.contato-container input[type=text]{
+    margin: 8px 0;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    font-size: 16px;
+    max-width: 800px;
+    color: #444;
+}
+.contato-container textarea{
+    padding: 8px 0;
+    margin: 8px 0;
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    font-size: 16px;
+    max-width: 800px;
+    resize: vertical;
+    color: #444;
+}
+.contato-container input[type=submit]{
+    border: 5px solid #5056A0;
+    border-radius: 10px;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
 }
 
 

@@ -2,7 +2,7 @@
     <div class="center">
         <div class="wrapper-404">
             <h2 style="text-align: center;"><i style="padding: 0 10px;" class="fa fa-times"></i> A página que está procurando não existe!</h2>
-            <p>Deseja voltar para a <a href="<?php echo INCLUDE_PATH; ?>">página inicial</a>?</p>
+            <p>Deseja voltar para a <a href="<?php echo INCLUDE_PATH; ?>">PÁGINA INICIAL</a>?</p>
         </div>
     </div>
 </section>

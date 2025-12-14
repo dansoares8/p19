@@ -54,12 +54,13 @@
         if(file_exists('pages/'.$url.'.php')){
             include('pages/'.$url.'.php');
         } else {
+            $pagina404 = true;
             include('pages/404.php');
         }
     ?>
 
 
-    <footer>
+    <footer <?php if(isset($pagina404) && $pagina404 == true) echo 'class="fixed"'; ?>>
         <h3 class="rodape-title">Daniel Informática</h3>
         <p>Todos os Direitos Reservados &copy; <?php echo date('Y'); ?></p>
     </footer>
@@ -68,6 +69,15 @@
     <!-- <script src="assets/js/jquery.min.js"></script> -->
     <script src="<?php echo INCLUDE_PATH; ?>assets/js/jquery.js"></script>
     <script src="<?php echo INCLUDE_PATH; ?>assets/js/script.js"></script>
+
+    <!-- trabalhando com mapas:
+        O php abaixo está validando para que o carregamento do mapa só ocorra na página contato-->
+    <?php 
+        if($url == 'contato'){
+    ?>
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDHPNQxozOzQSZ-djvWGOBUsHkBUoT_qH4'></script>
+        <script src="<?php echo INCLUDE_PATH; ?>initMap.js"></script>
+    <?php } ?>
 
 
 </body>
